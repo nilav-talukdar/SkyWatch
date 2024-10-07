@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWatch</title>
+    <!-- Css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon -->
+    <link rel="icon" href="assets/clear.png">
+    <!-- Google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- container starts-->
+    <section class="container">
+
+        <!-- App starts -->
+        <main class="weather-app">
+
+            <!-- input starts -->
+            <header class="input">
+                <div class="auth">
+                   <section class="input-field">
+                        <input type="text" class="city-input" name="city" id="city" placeholder="Enter your city">
+                   </section> 
+                   <div id="app"></div>
+                </div>
+                
+                <section class="search-btn">
+                    <button class="btn">Search here</button>
+                </section>
+            </header>
+            <!-- input ends -->
+
+            <!-- output starts -->
+            <section class="output">
+
+                <!-- main output details -->
+                <section class="main-output">
+                    <section class="img-container">
+                        <img class="weather-img" src="cloud.png">
+                    </section>
+                    <section class="weather-condition">
+                        <p class="temparature"><span class="temp-text">30</span> <sup>.</sup>C</p>
+                        <p class="weather-condition-text">Scatterd clouds</p>
+                    </section>
+                </section>
+                <!-- main output details -->
+
+                <!-- additional detail container starts -->
+                <section class="additional-details-container">
+
+                    <!-- humidity container starts -->
+                    <section class="humidity-container">
+                        <p class="humidity-icon"><i class="fa-solid fa-droplet"></i></p>
+                        <section class="humidity-text">
+                            <p class="text humidity">Humidity</p>
+                            <p class="percentage"><span class="h-text">80</span>%</p>
+                        </section>
+                    </section>
+                    <!-- humidity container ends -->
+
+                    <!-- wind container starts -->
+                    <section class="wind-container">
+                        <p class="wind-icon"><i class="fa-solid fa-wind"></i></p>
+                        <section class="wind-text">
+                            <p class="text wind">Wind speed</p>
+                            <p class="speed"><span class="w-text">25</span> Km/hr</p>
+                        </section>
+                    </section>
+                    <!-- wind container ends -->
+
+                </section>
+                <!-- additional detail container ends -->
+
+            </section>
+            <!-- output ends -->
+
+        </main>
+        <!-- App ends -->
+
+    </section>
+    <!-- container ends -->
+
+    <!-- Javascript file -->
+    <script
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_ZGFybGluZy10aWNrLTI1LmNsZXJrLmFjY291bnRzLmRldiQ"
+  src="https://darling-tick-25.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
+  type="text/javascript"
+></script>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

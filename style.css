@@ -1,0 +1,202 @@
+/* reset css starts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+/* reset css ends */
+
+/* Container starts*/
+.container {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* container ends */
+
+/* Weather App */
+.weather-app {
+    margin: 1rem;
+    width: 25rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+/* weather app ends */
+
+/* input starts */
+.input {
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+}
+/* input ends */
+
+/* auth starts */
+.auth {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* input field starts*/
+.input-field {
+    width: 78%;
+    align-self: flex-start;
+}
+.city-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(135, 207, 235, 0.377);
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+/* input field ends*/
+
+/* search button starts*/
+.search-btn {
+    width: 100%;
+}
+.btn {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0.9rem;
+    align-self: stretch;
+    background-color: #fff;
+    border: 2px solid rgba(135, 207, 235, 1);
+    border-radius: 0.5rem;
+    color: rgba(135, 207, 235, 1);
+    font-size: 1rem;
+    transition: all 0.3s linear 0s;
+    &:hover {
+        color: white;
+        border: 2px solid transparent;
+        background-color: rgba(135, 207, 235, 0.377);
+    }
+}
+/* serach button ends */
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+
+}
+#user-button {
+    transform: scale(1.2);
+}
+@media screen and (max-width: 440px) {
+    #app {
+        margin: 0;
+    }
+}
+
+/* output starts */
+.output {
+    height: 30rem;
+    display: none;
+}
+
+/* error handelling styles*/
+.error {
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.error-img {
+    height: 16rem;
+}
+.error-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* error handelling styles */
+
+/* output ends */
+
+/* image starts*/
+.weather-img {
+    height: 13.5rem;
+}
+/* image ends */
+
+/* main-output starts*/
+.main-output {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+/* main-output ends*/
+
+/* weather condition starts */
+.weather-condition {
+    text-align: center;
+}
+.temparature {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.weather-condition-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* weather condition ends */
+
+/* additional details container starts*/
+.additional-details-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+/* additional deatils container ends*/
+
+/* Humidity container starts */
+.humidity-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.humidity-icon {
+    font-size: 1.75rem;
+}
+.humidity-text {
+    font-size: 1.1rem;
+}
+/* Humidity container ends */
+
+/* Humidity container starts */
+.wind-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.wind-icon {
+    font-size: 1.75rem;
+}
+.wind-text {
+    font-size: 1.1rem;
+}
+/* Humidity container ends */
+
+/* display starts*/
+.display {
+    display: block;
+}
+/* display ends */
