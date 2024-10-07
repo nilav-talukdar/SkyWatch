@@ -5,6 +5,10 @@
 ![SkyWatch](user.png)
  <!-- Add a screenshot of your app here -->
 
+
+https://github.com/user-attachments/assets/2c877f1f-f431-4f38-b0da-1600520c5b14
+
+
 ## Description
 
 This Weather App allows users to search for weather information for various cities around the world. Built using HTML, CSS, and vanilla JavaScript, the app integrates with the OpenWeather API to provide up-to-date weather data. User authentication is handled via Clerk CDN, ensuring a secure and seamless experience.
